@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin Menu</ion-title>
+      <ion-buttons>
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="ion-text-center">
+    <img src="assets/logo.jpg" width="60%">
+  </p>
+
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <ion-button [routerLink]="['/approve-leave']" expand="full" fill="outline">
+        <ion-icon slot="end" name="mail-unread-outline"></ion-icon>
+        Approve Leave Request
+      </ion-button>
+    </ion-col>
+       <!--<ion-col size="12">
+      <ion-button [routerLink]="['/maintain-staff']" expand="full" fill="outline">
+        <ion-icon slot="end" name="document-text-outline"></ion-icon>
+        Manage Employee Information
+      </ion-button> 
+    </ion-col>-->
+  </ion-row>
+</ion-grid>
+  <ion-button class="ion-padding" expand="full" shape="round" color="light" [routerLink]="['/admin-sign-in']">
+    Sign out
+  </ion-button>
+</ion-content>

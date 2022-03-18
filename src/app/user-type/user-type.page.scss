@@ -1,0 +1,30 @@
+ion-content{
+    --background:black;
+}
+
+.container{
+	p{
+		margin-top: 1%;
+    	margin-bottom: 1%;
+        font-family: g_bold;
+        position: relative;
+        center: 10px;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        color: #ffffff;	
+
+
+	}
+    img{
+        height: 100px;
+        margin-top: 1%;
+    }
+}
+ion-card{
+	img{
+			height: 200px;
+        	margin-top: 1%;
+	}
+	
+}
+

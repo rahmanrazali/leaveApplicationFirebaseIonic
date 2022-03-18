@@ -1,0 +1,20 @@
+<ion-content>
+<div class="container ion-text-left">
+  <img src="assets/ILeave.png">
+</div>
+<div class="container ion-text-center">
+	<p>Please select user type</p>
+</div>
+<ion-card class="welcome-card"  [routerLink]="['/employee-sign-in']">
+	<ion-card-content>
+		<img src="assets/employeeIcon-removebg-preview.png">
+		<h1>Employee</h1>
+	</ion-card-content>
+</ion-card>
+<ion-card class="welcome-card"  [routerLink]="['/admin-sign-in']">
+	<ion-card-content>
+		<img src="assets/adminLogo-removebg-preview.png">
+		<h1>Approver</h1>
+	</ion-card-content>
+</ion-card>
+</ion-content>

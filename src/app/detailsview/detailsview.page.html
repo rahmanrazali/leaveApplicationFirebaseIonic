@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  	<ion-buttons slot="start">
+  		<ion-back-button></ion-back-button>
+  	</ion-buttons>
+    <ion-title class="ion-text-left">Employee Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div class="ion-padding">
+		<ion-text color="primary">
+			<p>Employee Information Form</p>
+			</ion-text>
+
+			<ion-item>
+				<ion-label position="floating">Name</ion-label>
+				<ion-input type="text" [(ngModel)]="user.name" placeholder="name" required></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label position="floating">Email</ion-label>
+				<ion-input type="email" [(ngModel)]="user.email" placeholder="your@gmail.com" required></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label>Department</ion-label>
+				<ion-select value="General" okText="Okay"  [(ngModel)]="user.department" cancelText="Dismiss">
+					<ion-select-option value="Marketing">Marketing</ion-select-option>
+					<ion-select-option value="Front-end">Front End</ion-select-option>
+					<ion-select-option value="Administration">Admin</ion-select-option>
+					<ion-select-option value="Logistics">Logistics</ion-select-option>
+					<ion-select-option value="Finance">Finance</ion-select-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Role</ion-label>
+				<ion-select value="General" okText="Okay"  [(ngModel)]="user.role" cancelText="Dismiss">
+					<ion-select-option value="Manager">Manager</ion-select-option>
+					<ion-select-option value="AssistantManager">Assistant Manager</ion-select-option>
+					<ion-select-option value="TeamLeader">Team Leader</ion-select-option>
+					<ion-select-option value="Associate">Associate</ion-select-option>
+					<ion-select-option value="Intern">Intern</ion-select-option>
+					<ion-select-option value="Others">Others</ion-select-option>
+				</ion-select>
+			</ion-item>
+    <ion-item>
+      <ion-label position="floating">Phone Number</ion-label>
+      <ion-input [(ngModel)]="user.phoneNumber"></ion-input>
+    </ion-item>
+    <ion-item>
+		<ion-label position="floating">Leave Days Allocated</ion-label>
+		<ion-input [(ngModel)]="user.leaveBalance"></ion-input>
+	  </ion-item>
+
+			<ion-button expand="block" color="primary" (click)="createUser(user)">
+				<ion-icon slot="start" name="send"></ion-icon>
+				Send
+			</ion-button>
+		</div>
+	</ion-content>
+
+

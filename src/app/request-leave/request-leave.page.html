@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RequestLeave</ion-title>
+      	<ion-buttons slot="start">
+  		<ion-back-button></ion-back-button>
+  	</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+        <ion-list no-line>
+          <ion-item>
+            <ion-label>Name</ion-label>
+            <ion-input type="text" placeholder="Name" [(ngModel)]="post.applicant"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>From</ion-label>
+            <ion-datetime presentation="date" displayFormat="DD/MM/YYYY" [(ngModel)]="post.dateFrom"></ion-datetime>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>To</ion-label>
+            <ion-datetime presentation="date" displayFormat="DD/MM/YYYY" [(ngModel)]="post.dateTo"></ion-datetime>
+          </ion-item>
+
+          <ion-item>
+            <ion-textarea placeholder="Reason for leave" [(ngModel)]="post.reason"></ion-textarea>
+          </ion-item>
+
+          <ion-item>
+             <ion-button expand="block" color="primary" (click)="createPost(post)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Apply
+    </ion-button>
+
+          </ion-item>
+        </ion-list>
+
+</ion-content>
